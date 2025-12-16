@@ -1,0 +1,25 @@
+data,descricao,categoria,conta,tipo,valor,forma_pagamento,parcelas_total,parcela_atual,tags,dia,mes,ano,valor_assinado
+2025-02-01,Salário Janeiro,Salário,Conta Corrente,receita,3500.0,transferencia,1,1,"salario,fixed",1.0,2.0,2025.0,3500.0
+2025-03-01,Aluguel Janeiro,Moradia,Conta Corrente,despesa,1200.0,transferencia,1,1,"aluguel,fixed",1.0,3.0,2025.0,-1200.0
+2025-05-01,Supermercado,Alimentação,Cartão Crédito,despesa,320.45,credito,1,1,"mercado,essencial",1.0,5.0,2025.0,-320.45
+2025-07-01,Uber,Transporte,Cartão Crédito,despesa,28.9,credito,1,1,"uber,transporte",1.0,7.0,2025.0,-28.9
+2025-10-01,Internet Residencial,Assinaturas,Conta Corrente,despesa,99.9,debito,1,1,"internet,fixed",1.0,10.0,2025.0,-99.9
+2025-12-01,Academia,Saúde,Cartão Crédito,despesa,89.9,credito,1,1,"academia,fixed",1.0,12.0,2025.0,-89.9
+,Restaurante,Alimentação,Cartão Crédito,despesa,75.6,credito,1,1,"restaurante,lazer",,,,-75.6
+,Spotify,Assinaturas,Cartão Crédito,despesa,19.9,credito,1,1,"musica,recorrente",,,,-19.9
+,Farmácia,Saúde,Cartão Crédito,despesa,46.8,credito,1,1,"farmacia,saude",,,,-46.8
+,Cinema,Lazer,Cartão Crédito,despesa,42.0,credito,1,1,"cinema,lazer",,,,-42.0
+2025-01-02,Salário Fevereiro,Salário,Conta Corrente,receita,3500.0,transferencia,1,1,"salario,fixed",2.0,1.0,2025.0,3500.0
+2025-03-02,Aluguel Fevereiro,Moradia,Conta Corrente,despesa,1200.0,transferencia,1,1,"aluguel,fixed",2.0,3.0,2025.0,-1200.0
+2025-05-02,Supermercado,Alimentação,Cartão Crédito,despesa,310.1,credito,1,1,"mercado,essencial",2.0,5.0,2025.0,-310.1
+2025-08-02,Uber,Transporte,Cartão Crédito,despesa,32.5,credito,1,1,"uber,transporte",2.0,8.0,2025.0,-32.5
+2025-10-02,Netflix,Assinaturas,Cartão Crédito,despesa,39.9,credito,1,1,"streaming,recorrente",2.0,10.0,2025.0,-39.9
+,Delivery,Alimentação,Cartão Crédito,despesa,68.4,credito,1,1,"delivery,lazer",,,,-68.4
+,Farmácia,Saúde,Cartão Crédito,despesa,58.2,credito,1,1,"farmacia,saude",,,,-58.2
+,Bar,Lazer,Cartão Crédito,despesa,55.0,credito,1,1,"bar,lazer",,,,-55.0
+2025-01-03,Salário Março,Salário,Conta Corrente,receita,3500.0,transferencia,1,1,"salario,fixed",3.0,1.0,2025.0,3500.0
+2025-03-03,Aluguel Março,Moradia,Conta Corrente,despesa,1200.0,transferencia,1,1,"aluguel,fixed",3.0,3.0,2025.0,-1200.0
+2025-06-03,Supermercado,Alimentação,Cartão Crédito,despesa,340.7,credito,1,1,"mercado,essencial",3.0,6.0,2025.0,-340.7
+2025-10-03,Compra Notebook,Eletrônicos,Cartão Crédito,despesa,2400.0,credito,12,3,"eletronico,parcelado",3.0,10.0,2025.0,-2400.0
+,Restaurante,Alimentação,Cartão Crédito,despesa,92.3,credito,1,1,"restaurante,lazer",,,,-92.3
+,Spotify,Assinaturas,Cartão Crédito,despesa,19.9,credito,1,1,"musica,recorrente",,,,-19.9
