@@ -1,133 +1,113 @@
-Projeto Data Analyzer – Controle Financeiro Pessoal
+# Financial Data Analysis Pipeline
 
-Este projeto implementa um pipeline completo de análise de dados financeiros pessoais utilizando Python.
-O sistema realiza leitura, validação, limpeza, transformação e análise dos dados, além da geração automática
-de visualizações gráficas para apoio ao controle financeiro.
+This project implements a complete financial data analysis pipeline using Python.
 
-====================================================================
+The system performs data ingestion, validation, cleaning, transformation, financial analysis, and automatic dashboard generation for personal finance monitoring.
 
-OBJETIVO
+---
 
-O objetivo do projeto é transformar registros financeiros brutos (CSV) em informações estruturadas,
-permitindo a análise de gastos, receitas e saldo mensal, bem como a visualização dos principais padrões
-financeiros ao longo do tempo.
+## 📊 Project Goals
 
-====================================================================
+The main objective is to transform raw financial transaction data into structured insights, enabling:
 
-ESTRUTURA DO PROJETO
+- Expense analysis
+- Revenue tracking
+- Monthly balance analysis
+- Financial behavior visualization
+- Dashboard generation
 
-projeto_data_analyzer/
-├── dashboard/
-│   ├── top_categorias.png
-│   └── saldo_mensal.png
-├── data/
-│   ├── raw/
-│   │   └── gastos.csv
-│   └── processed/
-│       └── gastos_limpos.csv
-├── docs/
-│   └── regras_dados.md
-├── src/
-│   └── main.py
-└── README.md
+---
 
-====================================================================
-
-ESTRUTURA DO CSV
-
-O arquivo de entrada deve conter as seguintes colunas:
-
-- data: data da transação
-- descricao: descrição do gasto ou receita
-- categoria: categoria financeira
-- conta: conta utilizada
-- tipo: receita ou despesa
-- valor: valor monetário no formato brasileiro (ex: 1234,56)
-- forma_pagamento: crédito, débito, transferência, etc.
-- parcelas_total: número total de parcelas
-- parcela_atual: parcela correspondente à linha
-- tags: palavras-chave para classificação
-
-O pipeline assume que os dados seguem este esquema para correta execução.
-
-====================================================================
-
-PIPELINE DE PROCESSAMENTO
-
-O pipeline executa as seguintes etapas:
-
-1. Leitura do arquivo CSV e verificação de existência
-2. Padronização dos nomes das colunas
-3. Validação das colunas obrigatórias
-4. Conversão e tratamento de datas e valores
-5. Criação de colunas auxiliares (ano, mês, dia)
-6. Geração de valor assinado (despesas negativas, receitas positivas)
-7. Cálculo de métricas financeiras
-8. Geração de dashboards
-9. Salvamento dos dados tratados
-
-====================================================================
-
-ANÁLISES REALIZADAS
-
-- Resumo financeiro geral (receitas, despesas e saldo final)
-- Top gastos por categoria
-- Resumo mensal de receitas, despesas e saldo
-
-====================================================================
-
-DASHBOARDS GERADOS
-
-O projeto gera automaticamente os seguintes gráficos:
-
-1. Top gastos por categoria
-   - Gráfico de barras horizontais
-   - Destaque visual para maior, médio e menor impacto financeiro
-
-2. Evolução do saldo mensal
-   - Gráfico de linha temporal
-   - Destaque para o melhor e pior mês
-   - Linha de referência no saldo zero
-
-Os gráficos são salvos na pasta "dashboard".
-
-====================================================================
-
-COMO EXECUTAR O PROJETO
-
-1. Instalar as dependências necessárias:
-
-pip install pandas matplotlib
-
-2. Executar o pipeline:
-
-python src/main.py
-
-Após a execução:
-- Os dados tratados estarão disponíveis em data/processed
-- Os gráficos estarão disponíveis em dashboard
-
-====================================================================
-
-TECNOLOGIAS UTILIZADAS
+## 🛠️ Tech Stack
 
 - Python
 - Pandas
 - Matplotlib
-- Manipulação de arquivos com os
+- Data Analysis
+- Data Visualization
 
-====================================================================
+---
 
-POSSÍVEIS EVOLUÇÕES
+## 📁 Project Structure
 
-- Dashboard interativo com Streamlit
-- Exportação de relatórios em PDF ou HTML
-- Análises por forma de pagamento
-- Análises de compras parceladas
-- Automatização de atualização mensal dos dados
+```bash
+financial-data-analysis-pipeline/
+├── dashboard/
+├── data/
+├── docs/
+├── src/
+└── README.md
+```
 
-====================================================================
+---
 
-AUTORIA
+## ⚙️ Data Pipeline
 
-Projeto desenvolvido para fins de aprendizado e construção de portfólio em análise de dados com Python.
+The pipeline performs the following steps:
+
+1. CSV ingestion
+2. Data validation
+3. Column standardization
+4. Date and monetary value processing
+5. Feature engineering
+6. Financial metric calculation
+7. Dashboard generation
+8. Processed data export
+
+---
+
+## 📈 Analysis Performed
+
+- Revenue and expense summary
+- Monthly balance analysis
+- Top expense categories
+- Financial trend visualization
+
+---
+
+## 📊 Dashboards Generated
+
+The project automatically generates:
+
+### Top Expense Categories
+- Horizontal bar chart
+- Category impact comparison
+
+### Monthly Balance Evolution
+- Time-series line chart
+- Monthly balance tracking
+- Best and worst month analysis
+
+Generated visualizations are stored in the `dashboard/` folder.
+
+---
+
+## 🚀 How to Run
+
+### Install dependencies
+
+```bash
+pip install pandas matplotlib
+```
+
+### Run the pipeline
+
+```bash
+python src/main.py
+```
+
+---
+
+## 🔮 Future Improvements
+
+- Interactive Streamlit dashboard
+- PDF/HTML report export
+- Payment method analysis
+- Installment tracking analysis
+- Automated monthly updates
+
+---
+
+## 📌 Purpose
+
+This project was developed for learning purposes and portfolio building in Data Analysis and Python-based financial analytics.
